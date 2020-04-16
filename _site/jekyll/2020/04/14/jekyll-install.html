@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1"><!-- Begin Jekyll SEO tag v2.6.1 -->
+<title>Jekyll Install | Your awesome title</title>
+<meta name="generator" content="Jekyll v4.0.0" />
+<meta property="og:title" content="Jekyll Install" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="D 드라이브에 설치하고 싶었는데 C 사용자 폴더에 설치가 되었다… 다시 해봐야하는데 우선 처음 한거 정리" />
+<meta property="og:description" content="D 드라이브에 설치하고 싶었는데 C 사용자 폴더에 설치가 되었다… 다시 해봐야하는데 우선 처음 한거 정리" />
+<link rel="canonical" href="http://localhost:4000/jekyll/2020/04/14/jekyll-install.html" />
+<meta property="og:url" content="http://localhost:4000/jekyll/2020/04/14/jekyll-install.html" />
+<meta property="og:site_name" content="Your awesome title" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2020-04-14T17:03:45+09:00" />
+<script type="application/ld+json">
+{"url":"http://localhost:4000/jekyll/2020/04/14/jekyll-install.html","headline":"Jekyll Install","dateModified":"2020-04-14T17:03:45+09:00","datePublished":"2020-04-14T17:03:45+09:00","description":"D 드라이브에 설치하고 싶었는데 C 사용자 폴더에 설치가 되었다… 다시 해봐야하는데 우선 처음 한거 정리","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/jekyll/2020/04/14/jekyll-install.html"},"@type":"BlogPosting","@context":"https://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+<link rel="stylesheet" href="/assets/main.css"><link type="application/atom+xml" rel="alternate" href="http://localhost:4000/feed.xml" title="Your awesome title" /></head>
+<body><header class="site-header" role="banner">
+
+  <div class="wrapper"><a class="site-title" rel="author" href="/">Your awesome title</a><nav class="site-nav">
+        <input type="checkbox" id="nav-trigger" class="nav-trigger" />
+        <label for="nav-trigger">
+          <span class="menu-icon">
+            <svg viewBox="0 0 18 15" width="18px" height="15px">
+              <path d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.032C17.335,0,18,0.665,18,1.484L18,1.484z M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.032C17.335,6.031,18,6.696,18,7.516L18,7.516z M18,13.516C18,14.335,17.335,15,16.516,15H1.484 C0.665,15,0,14.335,0,13.516l0,0c0-0.82,0.665-1.483,1.484-1.483h15.032C17.335,12.031,18,12.695,18,13.516L18,13.516z"/>
+            </svg>
+          </span>
+        </label>
+
+        <div class="trigger"><a class="page-link" href="/about/">About</a></div>
+      </nav></div>
+</header>
+<main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        <article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
+
+  <header class="post-header">
+    <h1 class="post-title p-name" itemprop="name headline">Jekyll Install</h1>
+    <p class="post-meta">
+      <time class="dt-published" datetime="2020-04-14T17:03:45+09:00" itemprop="datePublished">Apr 14, 2020
+      </time></p>
+  </header>
+
+  <div class="post-content e-content" itemprop="articleBody">
+    <p>D 드라이브에 설치하고 싶었는데
+C 사용자 폴더에 설치가 되었다…
+다시 해봐야하는데 우선 처음 한거 정리</p>
+
+<figure class="highlight"><pre><code class="language-console" data-lang="console"><span class="go">gem install jekyll bundler
+
+jekyll new my-awesome-site
+
+bundle install
+
+bundle exec jekyll serve</span></code></pre></figure>
+
+<h4 id="jekyll-과-bundle-젬을-설치한다">Jekyll 과 Bundle 젬을 설치한다.</h4>
+
+<figure class="highlight"><pre><code class="language-console" data-lang="console"><span class="gp">C:\Users\Purple&gt;</span>gem <span class="nb">install </span>jekyll
+<span class="go">Fetching: sassc-2.2.1-x64-mingw32.gem (100%)
+Successfully installed sassc-2.2.1-x64-mingw32
+Fetching: jekyll-sass-converter-2.1.0.gem (100%)
+Successfully installed jekyll-sass-converter-2.1.0
+Fetching: kramdown-2.1.0.gem (100%)
+Successfully installed kramdown-2.1.0
+Fetching: kramdown-parser-gfm-1.1.0.gem (100%)
+Successfully installed kramdown-parser-gfm-1.1.0
+Fetching: unicode-display_width-1.7.0.gem (100%)
+Successfully installed unicode-display_width-1.7.0
+Fetching: terminal-table-1.8.0.gem (100%)
+Successfully installed terminal-table-1.8.0
+Fetching: jekyll-4.0.0.gem (100%)
+-------------------------------------------------------------------------------------
+Jekyll 4.0 comes with some major changes, notably:
+
+  * Our `link` tag now comes with the `relative_url` filter incorporated into it.
+    You should no longer prepend `{{ site.baseurl }}` to `{% link foo.md %}`
+    For further details: https://github.com/jekyll/jekyll/pull/6727
+
+  * Our `post_url` tag now comes with the `relative_url` filter incorporated into it.
+    You shouldn't prepend `{{ site.baseurl }}` to `{% post_url 2019-03-27-hello %}`
+    For further details: https://github.com/jekyll/jekyll/pull/7589
+
+  * Support for deprecated configuration options has been removed. We will no longer
+    output a warning and gracefully assign their values to the newer counterparts
+    internally.
+-------------------------------------------------------------------------------------
+Successfully installed jekyll-4.0.0
+Parsing documentation for sassc-2.2.1-x64-mingw32
+Installing ri documentation for sassc-2.2.1-x64-mingw32
+Parsing documentation for jekyll-sass-converter-2.1.0
+Installing ri documentation for jekyll-sass-converter-2.1.0
+Parsing documentation for kramdown-2.1.0
+Installing ri documentation for kramdown-2.1.0
+Parsing documentation for kramdown-parser-gfm-1.1.0
+Installing ri documentation for kramdown-parser-gfm-1.1.0
+Parsing documentation for unicode-display_width-1.7.0
+Installing ri documentation for unicode-display_width-1.7.0
+Parsing documentation for terminal-table-1.8.0
+Installing ri documentation for terminal-table-1.8.0
+Parsing documentation for jekyll-4.0.0
+Installing ri documentation for jekyll-4.0.0
+Done installing documentation for sassc, jekyll-sass-converter, kramdown, kramdown-parser-gfm, unicode-display_width, terminal-table, jekyll after 21 seconds
+7 gems installed
+
+
+</span><span class="gp">C:\Users\Purple&gt;</span>gem <span class="nb">install </span>bundler
+<span class="go">Fetching: bundler-2.1.4.gem (100%)
+Successfully installed bundler-2.1.4
+Parsing documentation for bundler-2.1.4
+Installing ri documentation for bundler-2.1.4
+Done installing documentation for bundler after 22 seconds
+1 gem installed
+
+
+
+
+</span><span class="gp">C:\Users\Purple\purplike&gt;</span>bundle <span class="nb">install</span>
+<span class="go">Fetching gem metadata from https://rubygems.org/...........
+Fetching gem metadata from https://rubygems.org/.
+Resolving dependencies...
+Fetching public_suffix 4.0.4
+Installing public_suffix 4.0.4
+Fetching addressable 2.7.0
+Installing addressable 2.7.0
+Using bundler 2.1.4
+Using colorator 1.1.0
+Fetching concurrent-ruby 1.1.6
+Installing concurrent-ruby 1.1.6
+Using eventmachine 1.2.7 (x64-mingw32)
+Using http_parser.rb 0.6.0
+Using em-websocket 0.5.1
+Fetching ffi 1.12.2 (x64-mingw32)
+Installing ffi 1.12.2 (x64-mingw32)
+Using forwardable-extended 2.6.0
+Fetching i18n 1.8.2
+Installing i18n 1.8.2
+Using sassc 2.2.1 (x64-mingw32)
+Using jekyll-sass-converter 2.1.0
+Using rb-fsevent 0.10.3
+Fetching rb-inotify 0.10.1
+Installing rb-inotify 0.10.1
+Fetching listen 3.2.1
+Installing listen 3.2.1
+Using jekyll-watch 2.2.1
+Using kramdown 2.1.0
+Using kramdown-parser-gfm 1.1.0
+Using liquid 4.0.3
+Using mercenary 0.3.6
+Using pathutil 0.16.2
+Fetching rouge 3.18.0
+Installing rouge 3.18.0
+Using safe_yaml 1.0.5
+Using unicode-display_width 1.7.0
+Using terminal-table 1.8.0
+Using jekyll 4.0.0
+Fetching jekyll-feed 0.13.0
+Installing jekyll-feed 0.13.0
+Using jekyll-seo-tag 2.6.1
+Fetching minima 2.5.1
+Installing minima 2.5.1
+Fetching thread_safe 0.3.6
+Installing thread_safe 0.3.6
+Fetching tzinfo 1.2.7
+Installing tzinfo 1.2.7
+Fetching tzinfo-data 1.2019.3
+Installing tzinfo-data 1.2019.3
+Using wdm 0.1.1
+Bundle complete! 6 Gemfile dependencies, 34 gems now installed.
+Use `bundle info [gemname]` to see where a bundled gem is installed.
+Post-install message from i18n:
+
+HEADS UP! i18n 1.1 changed fallbacks to exclude default locale.
+But that may break your application.
+
+If you are upgrading your Rails application from an older version of Rails:
+
+Please check your Rails app for 'config.i18n.fallbacks = true'.
+</span><span class="gp">If you're using I18n (&gt;</span><span class="o">=</span> 1.1.0<span class="o">)</span> and Rails <span class="o">(</span>&lt; 5.2.2<span class="o">)</span>, this should be
+<span class="go">'config.i18n.fallbacks = [I18n.default_locale]'.
+If not, fallbacks will be broken in your app by I18n 1.1.x.
+
+If you are starting a NEW Rails application, you can ignore this notice.
+
+For more info see:
+https://github.com/svenfuchs/i18n/releases/tag/v1.1.0
+
+
+</span><span class="gp">C:\Users\Purple\purplike&gt;</span>bundle <span class="nb">exec </span>jekyll serve
+<span class="go">Configuration file: C:/Users/Purple/purplike/_config.yml
+            Source: C:/Users/Purple/purplike
+       Destination: C:/Users/Purple/purplike/_site
+ Incremental build: disabled. Enable with --incremental
+      Generating...
+       Jekyll Feed: Generating feed for posts
+                    done in 1.115 seconds.
+ Auto-regeneration: enabled for 'C:/Users/Purple/purplike'
+    Server address: http://127.0.0.1:4000/
+  Server running... press ctrl-c to stop.</span></code></pre></figure>
+
+
+  </div><a class="u-url" href="/jekyll/2020/04/14/jekyll-install.html" hidden></a>
+</article>
+
+      </div>
+    </main><footer class="site-footer h-card">
+  <data class="u-url" href="/"></data>
+
+  <div class="wrapper">
+
+    <h2 class="footer-heading">Your awesome title</h2>
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col footer-col-1">
+        <ul class="contact-list">
+          <li class="p-name">Your awesome title</li><li><a class="u-email" href="mailto:your-email@example.com">your-email@example.com</a></li></ul>
+      </div>
+
+      <div class="footer-col footer-col-2"><ul class="social-media-list"><li><a href="https://github.com/jekyll"><svg class="svg-icon"><use xlink:href="/assets/minima-social-icons.svg#github"></use></svg> <span class="username">jekyll</span></a></li><li><a href="https://www.twitter.com/jekyllrb"><svg class="svg-icon"><use xlink:href="/assets/minima-social-icons.svg#twitter"></use></svg> <span class="username">jekyllrb</span></a></li></ul>
+</div>
+
+      <div class="footer-col footer-col-3">
+        <p>Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.</p>
+      </div>
+    </div>
+
+  </div>
+
+</footer>
+</body>
+
+</html>
