@@ -15,7 +15,7 @@ https://gist.github.com/ihoneymon/652be052a0727ad59601
 - 순서없는 목록 (-)
 
 코드
-2.4.1. 코드블럭
+2.4.1. 코드블럭 (pre, code)
 <pre><code>
 public class BootSpringBootApplication {
   public static void main(String[] args) {
@@ -26,9 +26,9 @@ public class BootSpringBootApplication {
 </code>
 </pre>
 
-pre, code : 처음 줄이 뜨네?
+pre, code는 처음 줄이 뜨네?
 
-- 코드블럭코드
+- 코드블럭코드 
 
 ```
 public class BootSpringBootApplication {
@@ -38,3 +38,12 @@ public class BootSpringBootApplication {
 
 }
 ```
+개행!
+3칸 이상 엔터
+
+
+
+1
+
+
+2

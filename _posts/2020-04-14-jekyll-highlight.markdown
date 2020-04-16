@@ -13,6 +13,7 @@ https://github.com/rouge-ruby/rouge/wiki/List-of-supported-languages-and-lexers
 
 
 - console: A generic lexer for shell sessions. 
+- css: Cascading Style Sheets
 - html: HTML
 - java: The Java programming language (java.com)
 - javascript: JavaScript [aliases: js]
