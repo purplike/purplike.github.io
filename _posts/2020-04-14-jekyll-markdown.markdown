@@ -1,16 +1,19 @@
 ---
 layout: post
-title:  "Jekyll - Markdown"
+title:  "Github Markdown"
 date:   2020-04-14 17:03:45 +0900
-categories: jekyll update
+categories: github
 ---
 
 https://gist.github.com/ihoneymon/652be052a0727ad59601
+[Basic writing and formatting syntax](https://docs.github.com/en/github/writing-on-github/basic-writing-and-formatting-syntax)
 
-###### H6 
-##### H5
-#### H4
+# H1 The largest heading
+## H2
 ### H3
+#### H4
+##### H5
+###### H6 The smallest heading
 
 - 순서없는 목록 (-)
 
@@ -47,3 +50,7 @@ public class BootSpringBootApplication {
 
 
 2
+
+
+Links
+This site was built using [GitHub Pages](https://pages.github.com/).
