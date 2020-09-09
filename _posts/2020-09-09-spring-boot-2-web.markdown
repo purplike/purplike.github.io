@@ -5,7 +5,7 @@ date:   2020-09-09 17:46:00
 categories: Spring Boot
 ---
 
-Console
+STS4 Console
 ```Shell
   .   ____          _            __ _ _
  /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
@@ -29,3 +29,11 @@ Console
 2020-09-09 17:28:39.536  INFO 55748 --- [nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
 2020-09-09 17:28:39.545  INFO 55748 --- [nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 9 ms
 ```
+
+Browser
+http://localhost:8080/
+Whitelabel Error Page
+This application has no explicit mapping for /error, so you are seeing this as a fallback.
+
+Wed Sep 09 17:28:39 KST 2020
+There was an unexpected error (type=Not Found, status=404).
